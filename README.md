@@ -11,6 +11,9 @@ Set times base - waveform
 Data_Acquisition_Fresnel_Picoscope.ipynb containes the code used to take a whole data set, including moving the stepper motor and taking data with the Picoscope
 
 PiPicoStepperMotor.py contains the program running on the Raspberry Pi Pico, where the functions are defined
+
+
+Fresnel_theory and phase_theory show the analysis of the data and comparison to theory
 # Stepper Motor
 20cm in 50 rotations
 Limit switches installed
