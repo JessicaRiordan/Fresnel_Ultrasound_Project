@@ -8,7 +8,9 @@ Iterate get block for averaging the data
 Simple trigger - trigger on square wave, rising or falling edge
 Set times base - waveform 
 
+Data_Acquisition_Fresnel_Picoscope.ipynb containes the code used to take a whole data set, including moving the stepper motor and taking data with the Picoscope
 
+PiPicoStepperMotor.py contains the program running on the Raspberry Pi Pico, where the functions are defined
 # Stepper Motor
 20cm in 50 rotations
 Limit switches installed
