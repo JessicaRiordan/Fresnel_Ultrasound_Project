@@ -44,21 +44,21 @@ def initialise():
     currentcount=0
     
     initialising=True
-    print(initialising)
-    print(f"limit sensor={limitsensor.value()}")
-    print(f"count={currentcount}")
+    print(f"initialising={initialising}")
+    #print(f"limit sensor={limitsensor.value()}")
+    #print(f"count={currentcount}")
     while limitsensor.value() and currentcount<maxsteps:
         currentcount+=1
         move(1,1)
-    print(f"count={currentcount}")    
+    #print(f"count={currentcount}")    
     initialising=False
-    print(initialising)
+    print(f"initialising={initialising}")
     if currentcount<maxsteps:
         initialised=True
         currentpos=0
     while not limitsensor.value():
         stepp(0)
-    return False
+    
 
 def atlimit():
     if limitsensor.value():
@@ -75,8 +75,8 @@ def move(target_steps,directionAway):
     global currentpos
     
     if not initialised and not initialising:
-        print(initialised)
-        print(initialising)
+        #print(initialised)
+        #print(initialising)
         return "Not Initialised!"
         
     counter = 0
@@ -100,4 +100,4 @@ def move(target_steps,directionAway):
         counter = counter + 1
         stepp(directionAway)
         
-           
+    return("Success")       
